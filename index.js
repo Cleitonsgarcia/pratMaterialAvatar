@@ -1,4 +1,4 @@
-var pratMaterialAvatar = (name) => {
+  var pratMaterialAvatar = (name) => {
 
   var nameWords = name.split(' ')
   var firstName = nameWords[0]
@@ -8,12 +8,16 @@ var pratMaterialAvatar = (name) => {
   var fullName = firstNameInitial + lastNameInitial
   
   if(firstName === lastName){
-  	  fulName = firstName
+  	  fullName = firstName
   }
 
 
   return { 
   	  chars: fullName.toUpperCase()
-  }
+    }
   
-}
+  }
+
+  module.exports = {
+    pratMaterialAvatar: pratMaterialAvatar
+  }
